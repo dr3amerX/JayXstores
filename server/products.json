@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "name": "iPhone 15 Pro",
+    "description": "Latest Apple smartphone",
+    "category": "phones",
+    "price": 999,
+    "stock": 15,
+    "color": "Space Black",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "2",
+    "name": "MacBook Pro 16\"",
+    "description": "Powerful laptop for professionals",
+    "category": "computers",
+    "price": 2499,
+    "stock": 8,
+    "color": "Silver",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "3",
+    "name": "AirPods Pro Max",
+    "description": "Premium headphones",
+    "category": "accessories",
+    "price": 549,
+    "stock": 20,
+    "color": "Space Black",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "4",
+    "name": "iPad Air",
+    "description": "Versatile tablet",
+    "category": "gadgets",
+    "price": 599,
+    "stock": 12,
+    "color": "Blue",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "5",
+    "name": "Apple Watch Series 9",
+    "description": "Advanced smartwatch",
+    "category": "gadgets",
+    "price": 399,
+    "stock": 25,
+    "color": "Midnight",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "6",
+    "name": "Sony WH-1000XM5",
+    "description": "Noise-cancelling headphones",
+    "category": "accessories",
+    "price": 399,
+    "stock": 18,
+    "color": "Black",
+    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "7",
+    "name": "Samsung Galaxy S24",
+    "description": "Flagship Android phone",
+    "category": "phones",
+    "price": 899,
+    "stock": 22,
+    "color": "Phantom Black",
+    "image": "https://images.unsplash.com/photo-1511454715159-c8a3cb1c3ff7?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "8",
+    "name": "Dell XPS 13",
+    "description": "Ultraportable Windows laptop",
+    "category": "computers",
+    "price": 1299,
+    "stock": 14,
+    "color": "Silver",
+    "image": "https://images.unsplash.com/photo-1588872657840-18f45ea20ee0?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "9",
+    "name": "Google Pixel Buds Pro",
+    "description": "True wireless earbuds",
+    "category": "accessories",
+    "price": 199,
+    "stock": 30,
+    "color": "Charcoal",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "10",
+    "name": "iPad Pro 12.9\"",
+    "description": "Premium tablet with M2",
+    "category": "gadgets",
+    "price": 1099,
+    "stock": 9,
+    "color": "Space Grey",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "11",
+    "name": "AirPods Pro (2nd Gen)",
+    "description": "Wireless earbuds with ANC",
+    "category": "accessories",
+    "price": 249,
+    "stock": 35,
+    "color": "White",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "12",
+    "name": "Google Pixel Watch 2",
+    "description": "Smartwatch with Wear OS",
+    "category": "gadgets",
+    "price": 349,
+    "stock": 16,
+    "color": "Obsidian",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "13",
+    "name": "OnePlus 12",
+    "description": "Fast charging flagship phone",
+    "category": "phones",
+    "price": 799,
+    "stock": 19,
+    "color": "Silky Black",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "14",
+    "name": "Lenovo ThinkPad X1",
+    "description": "Business laptop",
+    "category": "computers",
+    "price": 1199,
+    "stock": 11,
+    "color": "Black",
+    "image": "https://images.unsplash.com/photo-1588872657840-18f45ea20ee0?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "15",
+    "name": "Bose QuietComfort 45",
+    "description": "Premium over-ear headphones",
+    "category": "accessories",
+    "price": 379,
+    "stock": 13,
+    "color": "Black",
+    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&q=60&auto=format&fit=crop"
+  },
+  {
+    "id": "16",
+    "name": "Samsung Galaxy Tab S9",
+    "description": "High-end Android tablet",
+    "category": "gadgets",
+    "price": 799,
+    "stock": 10,
+    "color": "Graphite",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=60&auto=format&fit=crop"
+  }
+]

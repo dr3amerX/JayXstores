@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+  <meta name="description" content="JayXstores - Online Shopping Made Easy. Shop quality electronics and gadgets with free shipping on orders over ₦50,000." />
+  <meta name="theme-color" content="#ff6b6b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="JayXstores" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no" />
+  <meta name="msapplication-config" content="none" />
+  <title>JayXstores — Online Shopping Made Easy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Bar - Removed -->
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-brand">
+        <button id="menuToggle" class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo"><span class="logo-jay">JAY</span><span class="logo-x">X</span><span class="logo-stores">STORES</span></div>
+      </div>
+      <div class="search-section">
+        <span class="welcome-text bounceText">Welcome to JayXstores! 🚚 Free Shipping on orders over ₦50,000</span>
+        <div class="search-bar">
+          <input id="searchInput" type="text" placeholder="Search products, brands..." />
+          <button id="searchBtn">🔍</button>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="account account-dropdown">
+          <button class="account-toggle">
+            <span>👤</span>
+            <span>Account</span>
+          </button>
+          <div class="account-menu">
+            <a href="../web-signin/index.html" class="account-menu-item">Sign In</a>
+            <a href="../web-signin/index.html" class="account-menu-item">Register</a>
+          </div>
+        </div>
+        <div class="list-icon" id="listIcon">
+          <span>🔖</span>
+          <span id="listCount">0</span>
+        </div>
+        <div class="cart-icon" id="cartIcon">
+          <span>🛒</span>
+          <span id="cartCount">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Slide-out Category Menu -->
+  <nav class="category-menu-sidebar" id="categoryMenu">
+    <button class="menu-close" id="menuClose">&#10005;</button>
+    <div class="category-menu-content">
+      <button class="category-btn" data-home="true" type="button">&#127968; Home</button>
+      <button class="category-btn active" data-filter="all" type="button">&#128717;&#65039; All</button>
+      <button class="category-btn" data-filter="phones" type="button">&#128241; Phones</button>
+      <button class="category-btn" data-filter="computers" type="button">&#128187; Computers</button>
+      <button class="category-btn" data-filter="accessories" type="button">&#127911; Accessories</button>
+      <button class="category-btn" data-filter="gadgets" type="button">&#8986; Gadgets</button>
+      <button class="category-btn mobile-list-btn" id="mobileListButton" type="button">&#128278; My List <span id="mobileListCount">0</span></button>
+    </div>
+  </nav>
+
+  <!-- Category Menu (Desktop) -->
+  <nav class="category-menu desktop-only">
+    <div class="container">
+      <button class="category-btn" data-home="true" type="button">&#127968; Home</button>
+      <button class="category-btn active" data-filter="all" type="button">&#128717;&#65039; All</button>
+      <button class="category-btn" data-filter="phones" type="button">&#128241; Phones</button>
+      <button class="category-btn" data-filter="computers" type="button">&#128187; Computers</button>
+      <button class="category-btn" data-filter="accessories" type="button">&#127911; Accessories</button>
+      <button class="category-btn" data-filter="gadgets" type="button">&#8986; Gadgets</button>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="banner-slide active">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200&h=300&fit=crop&q=60" alt="Sale Banner">
+      <div class="banner-text">
+        <h2>Mega Sale</h2>
+        <p>Up to 70% off on selected items</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-strip">
+    <div class="container">
+      <div class="contact-slider">
+        <div class="contact-slider-track">
+          <p>Contact us: 07053701251, WhatsApp: 08068601749, Email us: jayxstore@gmail.com</p>
+          <p aria-hidden="true">Contact us: 07053701251, WhatsApp: 08068601749, Email us: jayxstore@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Deals Section -->
+  <section class="deals-section">
+    <div class="container">
+      <h2>🔥 Flash Deals</h2>
+      <div class="deals-grid" id="dealsGrid">
+        <!-- Dynamic deals loaded here -->
+      </div>
+    </div>
+  </section>
+  <!-- Main Products Section -->
+  <section class="products-main">
+    <div class="container">
+      <div class="section-header">
+        <h2>Popular Products</h2>
+        <a href="#" class="view-all">View all →</a>
+      </div>
+      <div id="productGrid" class="product-grid">
+        <!-- Products loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <p>JayXstores is your trusted online marketplace for quality electronics and gadgets.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../web-store/index.html">Store Admin</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> JayXstores. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Details Modal -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeProduct">✕</button>
+      <div id="productDetails" class="product-details">
+        <!-- Product details loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeCart">✕</button>
+      <h2>Shopping Cart</h2>
+      <ul id="cartList" class="cart-list"></ul>
+      <div class="cart-totals">
+        <div class="total">Total: ₦<span id="cartTotal">0.00</span></div>
+        <button id="checkoutBtn" class="btn-checkout">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal" aria-hidden="true">
+    <div class="modal-content checkout-modal-content">
+      <header class="checkout-mobile-header">
+        <div class="container">
+          <button id="checkoutMenuToggle" class="menu-toggle" type="button" aria-label="Toggle categories">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="logo"><span class="logo-jay">JAY</span><span class="logo-x">X</span><span class="logo-stores">STORES</span></div>
+          <div class="search-section">
+            <div class="search-bar">
+              <input id="checkoutSearchInput" type="text" placeholder="Search products, brands..." />
+              <button id="checkoutSearchBtn" type="button">&#128269;</button>
+            </div>
+          </div>
+          <button id="checkoutBackButton" class="modal-back-btn" type="button" aria-label="Go back">&lt;</button>
+          <div class="header-actions">
+            <div class="account account-dropdown">
+              <button class="account-toggle" type="button">
+                <span>&#128100;</span>
+                <span>Account</span>
+              </button>
+              <div class="account-menu">
+                <a href="../web-signin/index.html" class="account-menu-item">Sign In</a>
+                <a href="../web-signin/index.html" class="account-menu-item">Register</a>
+              </div>
+            </div>
+            <div class="list-icon" id="checkoutListIcon">
+              <span>&#128278;</span>
+              <span id="checkoutListCount">0</span>
+            </div>
+            <div class="cart-icon" id="checkoutCartIcon">
+              <span>&#128722;</span>
+              <span id="checkoutCartCount">0</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="checkout-layout">
+        <section class="checkout-main">
+          <p class="checkout-eyebrow">Secure Checkout</p>
+          <h2>Complete your order</h2>
+          <form id="checkoutForm" class="checkout-form">
+            <div class="checkout-grid">
+              <label class="checkout-field">
+                <span>Full Name</span>
+                <input id="checkoutName" name="fullName" type="text" placeholder="Enter your full name" required>
+              </label>
+              <label class="checkout-field">
+                <span>Email Address</span>
+                <input id="checkoutEmail" name="email" type="email" placeholder="you@example.com" required>
+              </label>
+              <label class="checkout-field">
+                <span>Phone Number</span>
+                <input id="checkoutPhone" name="phone" type="tel" placeholder="+234 800 000 0000" required>
+              </label>
+              <label class="checkout-field">
+                <span>State</span>
+                <select id="checkoutState" name="state" required>
+                  <option value="">Select State</option>
+                  <option value="Lagos">Lagos</option>
+                </select>
+              </label>
+              <label class="checkout-field checkout-field-full">
+                <span>Delivery Address</span>
+                <input id="checkoutAddress" name="address" type="text" placeholder="House number, street, area" required>
+              </label>
+              <label class="checkout-field">
+                <span>City</span>
+                <select id="checkoutCity" name="city" required>
+                  <option value="">Select City/Area</option>
+                </select>
+              </label>
+              <label class="checkout-field">
+                <span>Sub Area</span>
+                <select id="checkoutArea" name="area">
+                  <option value="">Select Sub Area</option>
+                </select>
+              </label>
+              <label class="checkout-field">
+                <span>Payment Method</span>
+                <select id="checkoutPayment" name="payment" required>
+                  <option value="">Select payment method</option>
+                  <option value="Cash on Delivery">Cash on Delivery</option>
+                  <option value="Card Payment">Card Payment</option>
+                  <option value="Bank Transfer">Bank Transfer</option>
+                </select>
+              </label>
+              <p class="checkout-note">Estimated delivery: within 2 days.</p>
+              <label class="checkout-field checkout-field-full">
+                <span>Order Notes</span>
+                <textarea id="checkoutNotes" name="notes" rows="4" placeholder="Add delivery instructions if needed"></textarea>
+              </label>
+            </div>
+            <button type="submit" class="btn-place-order">Place Order</button>
+          </form>
+        </section>
+        <aside class="checkout-summary">
+          <h3>Your Order</h3>
+          <ul id="checkoutItems" class="checkout-items"></ul>
+          <div class="checkout-totals">
+            <div class="checkout-total-row">
+              <span>Items</span>
+              <span id="checkoutItemCount">0</span>
+            </div>
+            <div class="checkout-total-row">
+              <span>Subtotal</span>
+              <span>₦<span id="checkoutSubtotal">0.00</span></span>
+            </div>
+            <div class="checkout-total-row">
+              <span>Shipping</span>
+              <span id="checkoutShipping">₦7,000</span>
+            </div>
+            <div class="checkout-total-row checkout-grand-total">
+              <span>Total</span>
+              <span>₦<span id="checkoutGrandTotal">0.00</span></span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Confirmation Modal -->
+  <div id="orderSuccessModal" class="modal" aria-hidden="true">
+    <div class="modal-content order-success-modal">
+      <button class="modal-close" id="closeOrderSuccess" type="button" aria-label="Close confirmation">&times;</button>
+      <div class="order-success-icon" aria-hidden="true">
+        <svg viewBox="0 0 52 52" role="presentation">
+          <circle cx="26" cy="26" r="25"></circle>
+          <path d="M14 27l8 8 16-18"></path>
+        </svg>
+      </div>
+      <h2>Order Confirmed</h2>
+      <p id="orderSuccessMessage">Your order has been placed successfully and is now being processed.</p>
+      <p id="orderSuccessRedirectText" class="order-success-redirect">Redirecting to homepage in 10 seconds...</p>
+      <button id="orderSuccessDone" class="btn-place-order" type="button">Continue Shopping Now</button>
+    </div>
+  </div>
+
+  <!-- List Modal -->
+  <div id="listModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeList">✕</button>
+      <h2>My List</h2>
+      <ul id="listItems" class="list-items"></ul>
+      <div class="list-info" id="emptyListMessage" style="display: none;">
+        <p>Your list is empty</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
